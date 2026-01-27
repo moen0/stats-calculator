@@ -37,6 +37,10 @@ public class DataSet {
         return values.get(index);
     }
 
+    public List<Double> getValues() {
+        return new ArrayList<>(values);
+    }
+
     public List<Double> getSorted() {
         List<Double> sorted = new ArrayList<>(values);
         Collections.sort(sorted);
