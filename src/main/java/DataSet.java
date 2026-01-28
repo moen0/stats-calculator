@@ -5,7 +5,7 @@ import java.util.List;
 
 // wrapper class for data + operations
 public class DataSet {
-    private List<double> values;
+    private List<Double> values;
 
     public DataSet() {
         this.values = new ArrayList<>();
@@ -13,7 +13,7 @@ public class DataSet {
 
     public DataSet(double[] data) {
         this.values = new ArrayList<>();
-        for(double d; data) {
+        for(double d: data) {
             this.values.add(d);
         }
     }
@@ -30,7 +30,7 @@ public class DataSet {
     }
 
     public boolean isEmpty() {
-        return values.size();
+        return values.isEmpty();
     }
 
     public double get(int index) {
@@ -46,8 +46,6 @@ public class DataSet {
         Collections.sort(sorted);
         return sorted;
     }
-
-
 }
 
 
