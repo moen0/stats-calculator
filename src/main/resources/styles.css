@@ -1,0 +1,394 @@
+/* Statistical Calculator - FTMO Inspired Dark Theme with Orange Accents */
+
+/* Root and Background */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom, #0a0a0f, #12121a);
+}
+
+/* Header */
+.header {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff9800;
+    -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.5), 15, 0, 0, 2);
+}
+
+.header-box {
+    -fx-background-color: linear-gradient(to right, rgba(255, 152, 0, 0.1), transparent, rgba(255, 152, 0, 0.1));
+    -fx-border-color: transparent transparent #ff9800 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Tab Pane Styling */
+.tab-pane {
+    -fx-tab-min-width: 150px;
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 8 0 0 15;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #0d0d12;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #1a1a24;
+    -fx-background-radius: 6 6 0 0;
+    -fx-padding: 10 25;
+    -fx-border-color: #2a2a36 #2a2a36 transparent #2a2a36;
+    -fx-border-width: 1 1 0 1;
+    -fx-border-radius: 6 6 0 0;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: linear-gradient(to bottom, #ff9800, #e68900);
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #8a8a9a;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #0a0a0f;
+}
+
+.tab-pane .tab:hover {
+    -fx-background-color: #252532;
+}
+
+.tab-pane .tab:selected:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffab2e, #ff9800);
+}
+
+/* Content Pane */
+.content-pane {
+    -fx-background-color: #0d0d12;
+}
+
+/* Section Labels */
+.section-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff9800;
+}
+
+/* Data Input Areas */
+.data-input {
+    -fx-background-color: #1a1a24;
+    -fx-text-fill: #e0e0e0;
+    -fx-prompt-text-fill: #5a5a6a;
+    -fx-border-color: #2a2a36;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-family: "JetBrains Mono", "Consolas", "Monaco", monospace;
+    -fx-font-size: 13px;
+}
+
+.data-input:focused {
+    -fx-border-color: #ff9800;
+    -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.25), 10, 0, 0, 0);
+}
+
+.data-input .content {
+    -fx-background-color: #1a1a24;
+}
+
+.text-area {
+    -fx-background-color: #1a1a24;
+    -fx-text-fill: #e0e0e0;
+}
+
+.text-area .content {
+    -fx-background-color: #1a1a24;
+}
+
+/* Buttons */
+.primary-button {
+    -fx-background-color: linear-gradient(to bottom, #ff9800, #e68900);
+    -fx-text-fill: #0a0a0f;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 12 28;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.4), 8, 0, 0, 2);
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffab2e, #ff9800);
+    -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.6), 12, 0, 0, 3);
+}
+
+.primary-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #e68900, #cc7a00);
+    -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.3), 4, 0, 0, 1);
+}
+
+.secondary-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ff9800;
+    -fx-font-size: 13px;
+    -fx-padding: 11 27;
+    -fx-background-radius: 6;
+    -fx-border-color: #ff9800;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: rgba(255, 152, 0, 0.15);
+    -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.3), 8, 0, 0, 0);
+}
+
+.secondary-button:pressed {
+    -fx-background-color: rgba(255, 152, 0, 0.25);
+}
+
+/* Results Box */
+.results-box {
+    -fx-background-color: #14141c;
+    -fx-background-radius: 8;
+    -fx-border-color: #2a2a36;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+}
+
+.results-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.results-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.results-scroll .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+/* Result Labels */
+.result-section {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff9800;
+    -fx-padding: 12 0 6 0;
+    -fx-border-color: transparent transparent #2a2a36 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.result-name {
+    -fx-font-weight: normal;
+    -fx-text-fill: #8a8a9a;
+    -fx-font-size: 13px;
+}
+
+.result-value {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-family: "JetBrains Mono", "Consolas", "Monaco", monospace;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* Chart Container */
+.chart-container {
+    -fx-background-color: #14141c;
+    -fx-background-radius: 8;
+    -fx-border-color: #2a2a36;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-padding: 15;
+}
+
+/* Charts */
+.chart {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+}
+
+.chart-plot-background {
+    -fx-background-color: #1a1a24;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #2a2a36;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #2a2a36;
+}
+
+.chart-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e0e0e0;
+}
+
+.axis-label {
+    -fx-text-fill: #8a8a9a;
+    -fx-font-weight: bold;
+}
+
+.axis {
+    -fx-tick-label-fill: #6a6a7a;
+}
+
+.axis-tick-mark {
+    -fx-stroke: #3a3a46;
+}
+
+.axis-minor-tick-mark {
+    -fx-stroke: #2a2a36;
+}
+
+/* Bar Chart */
+.bar-chart .default-color0.chart-bar {
+    -fx-background-color: linear-gradient(to top, #e68900, #ff9800, #ffab2e);
+    -fx-background-radius: 4 4 0 0;
+    -fx-border-color: #ffab2e;
+    -fx-border-width: 1 1 0 1;
+    -fx-border-radius: 4 4 0 0;
+}
+
+.bar-chart .default-color0.chart-bar:hover {
+    -fx-background-color: linear-gradient(to top, #ff9800, #ffab2e, #ffc56b);
+}
+
+/* Scatter Chart */
+.scatter-chart .default-color0.chart-symbol {
+    -fx-background-color: #ff9800;
+    -fx-background-radius: 8;
+    -fx-padding: 6;
+    -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.5), 4, 0, 0, 0);
+}
+
+.scatter-chart .default-color1.chart-symbol {
+    -fx-background-color: #4caf50;
+    -fx-background-radius: 3;
+    -fx-padding: 4;
+}
+
+/* Line in scatter (regression) */
+.scatter-chart .default-color1.chart-series-line {
+    -fx-stroke: #4caf50;
+    -fx-stroke-width: 2;
+}
+
+/* Chart Legend */
+.chart-legend {
+    -fx-background-color: #1a1a24;
+    -fx-background-radius: 4;
+    -fx-padding: 8;
+    -fx-border-color: #2a2a36;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #8a8a9a;
+}
+
+.chart-legend-item-symbol {
+    -fx-background-radius: 4;
+}
+
+/* Interpretation Label */
+.interpretation {
+    -fx-font-style: italic;
+    -fx-text-fill: #4caf50;
+    -fx-padding: 12 0 0 0;
+    -fx-font-size: 12px;
+}
+
+/* Placeholder */
+.placeholder-label {
+    -fx-text-fill: #5a5a6a;
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+}
+
+/* Scroll Bars */
+.scroll-bar {
+    -fx-background-color: #14141c;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #1a1a24;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #3a3a46;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #ff9800;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+
+/* Alert Dialogs */
+.alert {
+    -fx-background-color: #14141c;
+}
+
+.alert .content {
+    -fx-text-fill: #e0e0e0;
+}
+
+.alert .header-panel {
+    -fx-background-color: #1a1a24;
+}
+
+.alert .button {
+    -fx-background-color: #ff9800;
+    -fx-text-fill: #0a0a0f;
+    -fx-font-weight: bold;
+}
+
+/* Grid Pane for Box Plot */
+.grid-pane .label {
+    -fx-text-fill: #e0e0e0;
+}
+
+/* Tooltip */
+.tooltip {
+    -fx-background-color: #1a1a24;
+    -fx-text-fill: #e0e0e0;
+    -fx-border-color: #ff9800;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 8;
+    -fx-font-size: 12px;
+}
+
+/* Additional positive/negative indicators */
+.positive-value {
+    -fx-text-fill: #4caf50;
+}
+
+.negative-value {
+    -fx-text-fill: #f44336;
+}
+
+/* Focus indicators */
+.focused {
+    -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.3), 6, 0, 0, 0);
+}

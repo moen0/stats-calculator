@@ -1,5 +1,6 @@
-import java.util.*;
+package com.moen;
 
+import java.util.*;
 
 // mean, median, mode, std dev, variance
 public class DescriptiveStats {
@@ -64,6 +65,7 @@ public class DescriptiveStats {
         Collections.sort(modes);
         return modes;
     }
+
 
     public double min() {
         if (data.isEmpty()) {
