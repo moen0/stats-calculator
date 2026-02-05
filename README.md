@@ -1,6 +1,6 @@
-# Statistical Calculator Mini-Project by Moen
+# Statistical Calculator 
 
-A JavaFX-based statistical calculator with visualizations for descriptive statistics, regression analysis, and data visualization.
+Just a boring JavaFX-based statistical calculator with visualizations for descriptive statistics, regression analysis, and data visualization. First FX project.
 
 ## Features
 
@@ -48,6 +48,4 @@ mvn clean javafx:run
 mvn clean package
 ```
  
-## License
 
-MIT License - Feel free to use and modify.
