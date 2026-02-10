@@ -1,11 +1,8 @@
-/* Statistical Calculator - FTMO Inspired Dark Theme with Orange Accents */
 
-/* Root and Background */
 .root-pane {
     -fx-background-color: linear-gradient(to bottom, #0a0a0f, #12121a);
 }
 
-/* Header */
 .header {
     -fx-font-size: 32px;
     -fx-font-weight: bold;
@@ -19,7 +16,6 @@
     -fx-border-width: 0 0 1 0;
 }
 
-/* Tab Pane Styling */
 .tab-pane {
     -fx-tab-min-width: 150px;
 }
@@ -63,19 +59,16 @@
     -fx-background-color: linear-gradient(to bottom, #ffab2e, #ff9800);
 }
 
-/* Content Pane */
 .content-pane {
     -fx-background-color: #0d0d12;
 }
 
-/* Section Labels */
 .section-label {
     -fx-font-size: 14px;
     -fx-font-weight: bold;
     -fx-text-fill: #ff9800;
 }
 
-/* Data Input Areas */
 .data-input {
     -fx-background-color: #1a1a24;
     -fx-text-fill: #e0e0e0;
@@ -106,7 +99,6 @@
     -fx-background-color: #1a1a24;
 }
 
-/* Buttons */
 .primary-button {
     -fx-background-color: linear-gradient(to bottom, #ff9800, #e68900);
     -fx-text-fill: #0a0a0f;
@@ -149,7 +141,6 @@
     -fx-background-color: rgba(255, 152, 0, 0.25);
 }
 
-/* Results Box */
 .results-box {
     -fx-background-color: #14141c;
     -fx-background-radius: 8;
@@ -171,7 +162,6 @@
     -fx-background-color: transparent;
 }
 
-/* Result Labels */
 .result-section {
     -fx-font-size: 14px;
     -fx-font-weight: bold;
@@ -194,7 +184,6 @@
     -fx-font-weight: bold;
 }
 
-/* Chart Container */
 .chart-container {
     -fx-background-color: #14141c;
     -fx-background-radius: 8;
@@ -204,7 +193,6 @@
     -fx-padding: 15;
 }
 
-/* Charts */
 .chart {
     -fx-background-color: transparent;
     -fx-padding: 10;
@@ -245,7 +233,6 @@
     -fx-stroke: #2a2a36;
 }
 
-/* Bar Chart */
 .bar-chart .default-color0.chart-bar {
     -fx-background-color: linear-gradient(to top, #e68900, #ff9800, #ffab2e);
     -fx-background-radius: 4 4 0 0;
@@ -272,13 +259,11 @@
     -fx-padding: 4;
 }
 
-/* Line in scatter (regression) */
 .scatter-chart .default-color1.chart-series-line {
     -fx-stroke: #4caf50;
     -fx-stroke-width: 2;
 }
 
-/* Chart Legend */
 .chart-legend {
     -fx-background-color: #1a1a24;
     -fx-background-radius: 4;
@@ -296,7 +281,6 @@
     -fx-background-radius: 4;
 }
 
-/* Interpretation Label */
 .interpretation {
     -fx-font-style: italic;
     -fx-text-fill: #4caf50;
@@ -304,14 +288,12 @@
     -fx-font-size: 12px;
 }
 
-/* Placeholder */
 .placeholder-label {
     -fx-text-fill: #5a5a6a;
     -fx-font-size: 14px;
     -fx-font-style: italic;
 }
 
-/* Scroll Bars */
 .scroll-bar {
     -fx-background-color: #14141c;
 }
@@ -343,7 +325,6 @@
     -fx-shape: null;
 }
 
-/* Alert Dialogs */
 .alert {
     -fx-background-color: #14141c;
 }
@@ -362,12 +343,10 @@
     -fx-font-weight: bold;
 }
 
-/* Grid Pane for Box Plot */
 .grid-pane .label {
     -fx-text-fill: #e0e0e0;
 }
 
-/* Tooltip */
 .tooltip {
     -fx-background-color: #1a1a24;
     -fx-text-fill: #e0e0e0;
@@ -379,7 +358,6 @@
     -fx-font-size: 12px;
 }
 
-/* Additional positive/negative indicators */
 .positive-value {
     -fx-text-fill: #4caf50;
 }
@@ -388,7 +366,6 @@
     -fx-text-fill: #f44336;
 }
 
-/* Focus indicators */
 .focused {
     -fx-effect: dropshadow(gaussian, rgba(255, 152, 0, 0.3), 6, 0, 0, 0);
 }
